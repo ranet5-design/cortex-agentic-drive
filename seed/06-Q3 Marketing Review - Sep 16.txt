@@ -1,0 +1,17 @@
+Aurora Launch — Q3 Marketing Review (transcript)
+Date: September 16, 2026
+Attendees: Priya Raman, Marcus Chen, Dana Okafor, Leo Varga
+
+Leo: Bad news first. Voltline pushed a firmware update that breaks real-time readings for about 15% of meters. We need two more weeks.
+Priya: Then we move the launch. Decision: the Aurora public launch moves from September 24 to October 2.
+Marcus: Paid social has spent $41,800 so far and the cost per sign-up is holding at around $6. I'll pause spend for a week so we don't burn budget before launch.
+Dana: Makes sense. Remaining marketing budget for Q4 carry-over will be decided in October.
+Priya: The two micro-influencers are booked; I'll move their posts to launch week.
+Marcus: We still need a retention campaign. Week-two churn in the beta was 22%.
+Priya: Agreed. Let's draft a retention plan before launch. Should we include a referral reward?
+
+ACTION ITEMS
+- Marcus: pause paid social until Sep 26 and relaunch for the new date
+- Priya: move influencer posts to launch week by Sep 20
+- Marcus: draft a retention campaign proposal by Sep 25
+- Leo: confirm Voltline firmware fix by Sep 29

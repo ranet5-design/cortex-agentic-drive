@@ -1,0 +1,14 @@
+INVOICE
+
+From: EventSpace Co
+Bill To: Northwind Labs, 12 Elm Street, Portland OR
+Invoice No: INV-0387
+Date: September 22, 2026
+
+Description                                              Amount
+Aurora launch event — venue hire (Pier 9 Loft, 1 day)     $9,800.00
+Catering for 120 guests                                   $2,100.00
+AV equipment and staging                                  $400.00
+
+Total Due                                                 $12,300.00
+Please pay within 15 days.

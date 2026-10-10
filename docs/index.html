@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cortex — the agentic drive</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234f46e5'/><path d='M9 16a7 7 0 0 1 12-5M23 16a7 7 0 0 1-12 5' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round'/><circle cx='16' cy='16' r='2.6' fill='white'/></svg>">
+<style>
+  :root { --bg:#f6f7fb; --ink:#171a26; --muted:#5d6478; --accent:#4f46e5; --soft:#eef0ff; --card:#fff; --line:#e3e6ef; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0e1018; --ink:#e8eaf3; --muted:#a0a6bb; --accent:#818cf8; --soft:#232651; --card:#161925; --line:#2a2f42; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+  .wrap { max-width:960px; margin:0 auto; padding:48px 16px 64px; }
+  header { text-align:center; }
+  .logo { width:64px; height:64px; color:var(--accent); }
+  h1 { font-size:clamp(32px,6vw,48px); margin:10px 0 4px; letter-spacing:-.02em; }
+  .tag { color:var(--muted); font-size:18px; margin:0 auto; max-width:640px; }
+  .btns { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin:22px 0 30px; }
+  .btn { display:inline-block; padding:10px 18px; border-radius:10px; font-weight:600; text-decoration:none; border:1px solid var(--line); color:var(--ink); background:var(--card); }
+  .btn.primary { background:var(--accent); color:#fff; border-color:transparent; }
+  .shot { width:100%; border-radius:14px; border:1px solid var(--line); box-shadow:0 14px 40px rgba(20,24,40,.18); display:block; }
+  h2 { margin:44px 0 12px; font-size:22px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px; }
+  .card h3 { margin:0 0 4px; font-size:16px; }
+  .card p { margin:0; color:var(--muted); font-size:14.5px; }
+  .agents { display:flex; flex-wrap:wrap; gap:8px; }
+  .agent { padding:4px 11px; border-radius:8px; color:#fff; font-size:13px; font-weight:600; }
+  pre { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; overflow-x:auto; font-size:14px; }
+  footer { margin-top:48px; text-align:center; color:var(--muted); font-size:14px; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="currentColor"/><path d="M9 16a7 7 0 0 1 12-5M23 16a7 7 0 0 1-12 5" stroke="white" stroke-width="2.6" fill="none" stroke-linecap="round"/><circle cx="16" cy="16" r="2.6" fill="white"/></svg>
+    <h1>Cortex</h1>
+    <p class="tag">The agentic drive: cloud storage with a team of AI agents that read every file, organize it, catch contradictions, answer questions with citations, write new documents and run automations.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://github.com/ranet5-design/cortex-agentic-drive">View source on GitHub</a>
+      <a class="btn" href="https://github.com/ranet5-design/cortex-agentic-drive/blob/main/BRAINSTORM.md">Brainstorming &amp; user flows</a>
+    </div>
+  </header>
+
+  <img class="shot" src="screenshot.png" alt="Cortex dashboard showing smart folders, conflict insights and auto-organized files">
+
+  <h2>What the agents do</h2>
+  <div class="grid">
+    <div class="card"><h3>📂 Proactive organization</h3><p>Every upload is titled, summarized, tagged and filed into smart folders that the agent names itself. You never create a folder.</p></div>
+    <div class="card"><h3>🔎 Semantic retrieval</h3><p>Ask in plain English. Answers cite the exact passage, prefer newer documents, and warn you when sources disagree.</p></div>
+    <div class="card"><h3>⚠️ Conflict detection</h3><p>The Sentinel cross-checks each new file. When the lease says $15,200/month but the plan budgeted $14,500, you find out immediately.</p></div>
+    <div class="card"><h3>✍️ Cross-document synthesis</h3><p>"Draft a requirements doc from the Aurora meetings" produces a living document that flags itself stale when new information arrives.</p></div>
+    <div class="card"><h3>⚡ Automated workflows</h3><p>Invoices go into an expense ledger and meetings into an action-item tracker, and you can write new rules in plain English.</p></div>
+    <div class="card"><h3>🧭 Drive briefing</h3><p>"Brief me" gives a status report of every project, open conflicts and live ledgers.</p></div>
+  </div>
+
+  <h2>The agent team</h2>
+  <div class="agents">
+    <span class="agent" style="background:#6366f1">Router</span><span class="agent" style="background:#0ea5e9">Librarian</span>
+    <span class="agent" style="background:#10b981">Organizer</span><span class="agent" style="background:#f59e0b">Automator</span>
+    <span class="agent" style="background:#ef4444">Sentinel</span><span class="agent" style="background:#8b5cf6">Retriever</span>
+    <span class="agent" style="background:#14b8a6">Analyst</span><span class="agent" style="background:#ec4899">Writer</span>
+    <span class="agent" style="background:#64748b">Briefer</span>
+  </div>
+
+  <h2>Run it locally</h2>
+  <pre>git clone https://github.com/ranet5-design/cortex-agentic-drive.git
+cd cortex-agentic-drive
+npm install
+npm start            # open http://localhost:3000</pre>
+  <p style="color:var(--muted)">Set <code>ANTHROPIC_API_KEY</code> to power the agents with Claude Opus 5.5. Without a key, the same agents run on offline heuristics. Cortex needs a Node.js server, so it runs locally; this page is its project site.</p>
+
+  <footer>Web Design &amp; Development Lab · Lab 05 Hackathon: Agentic Drive</footer>
+</div>
+</body>
+</html>

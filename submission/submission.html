@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cortex — Lab 05 Hackathon Submission</title>
+<style>
+  @page { size: A4; margin: 16mm 15mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", system-ui, sans-serif; color: #1f2330; font-size: 10pt; line-height: 1.42; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  a { color: #3730a3; }
+  .page { page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+
+  /* cover */
+  .cover { height: 263mm; border: 2.5px solid #1f2330; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20mm; }
+  .cover .logo { width: 92px; height: 92px; }
+  .eyebrow { letter-spacing: .18em; text-transform: uppercase; color: #5d6478; font-size: 12pt; margin-top: 18px; }
+  .cover h1 { font-size: 36pt; margin: 6px 0 4px; letter-spacing: -.02em; }
+  .cover .sub { color: #5d6478; font-size: 13pt; max-width: 125mm; }
+  .bar { width: 70px; height: 5px; border-radius: 3px; background: #4f46e5; margin: 22px auto; }
+  table { border-collapse: collapse; }
+  .members th { background: #4f46e5; color: #fff; padding: 9px 26px; font-size: 12pt; border: 1px solid #1f2330; }
+  .members td { padding: 9px 26px; border: 1px solid #1f2330; font-size: 12pt; }
+  .links { margin-top: 26px; font-size: 10.5pt; }
+  .links th { background: #f1f3f9; text-align: center; padding: 6px 12px; border: 1px solid #dfe3ee; font-weight: 600; }
+  .links td { padding: 6px 12px; border: 1px solid #dfe3ee; }
+
+  h2 { font-size: 17pt; margin: 0 0 10px; padding-bottom: 6px; border-bottom: 3px solid #4f46e5; }
+  h3 { font-size: 11.5pt; margin: 11px 0 5px; color: #3730a3; }
+  p { margin: 5px 0; }
+  .shot { width: 86%; display: block; margin-left: auto !important; margin-right: auto !important; border: 1px solid #dfe3ee; border-radius: 8px; margin: 8px 0 4px; }
+  .caption { color: #5d6478; font-size: 9pt; text-align: center; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .box { border: 1px solid #dfe3ee; border-radius: 8px; padding: 8px 10px; background: #fafbff; }
+  .box b { display: block; color: #3730a3; }
+  .tbl { width: 100%; font-size: 9.5pt; margin: 6px 0; }
+  .tbl th, .tbl td { border: 1px solid #dfe3ee; padding: 5px 7px; text-align: left; vertical-align: top; }
+  .tbl th { background: #f1f3f9; }
+  .yes { color: #047857; font-weight: 600; } .later { color: #9a6700; font-weight: 600; }
+  ul { margin: 4px 0; padding-left: 18px; } li { margin: 2px 0; }
+  ol { margin: 4px 0; padding-left: 20px; }
+  blockquote { margin: 8px 0; padding: 8px 12px; background: #eef0ff; border-left: 4px solid #4f46e5; border-radius: 0 6px 6px 0; }
+
+  /* flow diagram */
+  .flow { display: flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; margin: 8px 0; }
+  .node { border-radius: 7px; padding: 5px 9px; color: #fff; font-weight: 600; font-size: 9pt; text-align: center; }
+  .node small { display: block; font-weight: 400; opacity: .9; font-size: 7.5pt; }
+  .arrow { color: #9aa1b4; font-weight: 700; }
+  .lane { border: 1px dashed #c8cde0; border-radius: 10px; padding: 6px 8px; margin: 6px 0; }
+  .lane-label { font-size: 8.5pt; color: #5d6478; text-transform: uppercase; letter-spacing: .08em; }
+  code, pre { font-family: Consolas, monospace; font-size: 9.5pt; }
+  pre { background: #f4f5fa; border: 1px solid #dfe3ee; border-radius: 8px; padding: 8px 10px; }
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<section class="page">
+  <div class="cover">
+    <svg class="logo" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#4f46e5"/><path d="M9 16a7 7 0 0 1 12-5M23 16a7 7 0 0 1-12 5" stroke="white" stroke-width="2.6" fill="none" stroke-linecap="round"/><circle cx="16" cy="16" r="2.6" fill="white"/></svg>
+    <div class="eyebrow">Web Design Lab · Lab 05 Hackathon</div>
+    <h1>Cortex</h1>
+    <div class="sub">The agentic drive: cloud storage where AI agents read, organize, cross-check and act on your files</div>
+    <div class="bar"></div>
+    <table class="members">
+      <tr><th>Group Member</th><th>Roll Number</th></tr>
+      <tr><td>Rania Saleem</td><td>629</td></tr>
+      <tr><td>Sadia Imran</td><td>241</td></tr>
+    </table>
+    <table class="links">
+      <tr><th>GitHub Repository</th><td><a href="https://github.com/ranet5-design/cortex-agentic-drive">github.com/ranet5-design/cortex-agentic-drive</a></td></tr>
+      <tr><th>Project Page</th><td><a href="https://ranet5-design.github.io/cortex-agentic-drive/">ranet5-design.github.io/cortex-agentic-drive</a></td></tr>
+      <tr><th>Brainstorming Doc</th><td><a href="https://github.com/ranet5-design/cortex-agentic-drive/blob/main/BRAINSTORM.md">BRAINSTORM.md (in the repository)</a></td></tr>
+      <tr><th>Video Pitch</th><td>3-minute demo video attached with this submission</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ============ OVERVIEW ============ -->
+<section class="page">
+  <h2>1. The Product</h2>
+  <blockquote><b>Problem:</b> Google Drive and Dropbox are passive filing cabinets. Files go in, nobody reads them, and they quietly contradict each other.<br>
+  <b>Our answer:</b> a drive that behaves like a diligent colleague who has read every file, remembers what changed, notices when documents disagree, and does the paperwork when new files arrive.</blockquote>
+  <img class="shot" src="../docs/screenshot.png" alt="Cortex dashboard">
+  <div class="caption">Cortex dashboard: smart folders the agents created, Sentinel conflict alerts, and auto-organized, auto-summarized files.</div>
+
+  <h3>Core agentic capabilities (all four from the brief are implemented)</h3>
+  <div class="grid2">
+    <div class="box"><b>1. Proactive Organization</b>The Librarian titles, summarizes, classifies and tags each upload and extracts people and key figures. The Organizer files it into a smart folder it names itself.</div>
+    <div class="box"><b>2. Semantic Retrieval</b>Ask in plain English. Hybrid search (BM25 + AI query expansion) feeds the Analyst, which answers with clickable citations and prefers newer sources.</div>
+    <div class="box"><b>3. Cross-Document Synthesis</b>"Draft a requirements doc from the Aurora meetings": the Router picks the sources and the Writer reconciles them into a new <i>living document</i>.</div>
+    <div class="box"><b>4. Automated Workflows</b>Invoice → Expense Ledger.csv; Meeting notes → Action Items tracker. New rules can be written in plain English and backfill existing files.</div>
+  </div>
+
+  <h3>Our "aha!" features</h3>
+  <ul>
+    <li><b>Sentinel conflict detection:</b> the lease says <b>$15,200/month</b> but the relocation plan budgeted <b>$14,500</b>. Cortex flags it the moment the lease is uploaded and highlights the newest source.</li>
+    <li><b>Self-flagging living documents:</b> generated docs remember their sources; when related files arrive they get a <b>↻ stale</b> badge and regenerate as v2 in one click.</li>
+    <li><b>Answers that warn you:</b> "What is the paid social budget?" returns $52,000 with citations, plus a warning that the budget sheet still says $45,000.</li>
+    <li><b>Visible agent traces:</b> every result shows which agent did what, in order, so the AI's work is transparent.</li>
+  </ul>
+</section>
+
+<!-- ============ BRAINSTORMING ============ -->
+<section class="page">
+  <h2>2. Brainstorming Process</h2>
+  <h3>Reframing: three lenses</h3>
+  <table class="tbl">
+    <tr><th>Lens</th><th>Passive drive today</th><th>Active drive (Cortex)</th></tr>
+    <tr><td><b>Memory</b></td><td>Remembers bytes</td><td>Remembers <i>facts</i>: figures, dates, decisions, and who said them</td></tr>
+    <tr><td><b>Attention</b></td><td>Waits for a search</td><td>Reacts the moment a file lands: files it, links it, cross-checks it</td></tr>
+    <tr><td><b>Agency</b></td><td>Never writes anything</td><td>Writes documents, maintains ledgers, refreshes stale docs</td></tr>
+  </table>
+
+  <h3>Personas</h3>
+  <ul>
+    <li><b>Priya, marketing lead:</b> lives in meeting transcripts; needs "what did we actually decide?"</li>
+    <li><b>Dana, ops &amp; finance:</b> drowns in invoices and contracts; needs numbers extracted and reconciled.</li>
+    <li><b>Leo, product:</b> joins mid-project; needs a briefing, not a folder tree.</li>
+  </ul>
+
+  <h3>Idea storm → scoring (impact × "aha" × feasibility)</h3>
+  <table class="tbl">
+    <tr><th>Idea</th><th>Impact</th><th>"Aha"</th><th>Feasibility</th><th>Decision</th></tr>
+    <tr><td>Cited Q&amp;A over all files</td><td>High</td><td>Med</td><td>High</td><td class="yes">Built</td></tr>
+    <tr><td>Self-organizing smart folders</td><td>High</td><td>Med</td><td>High</td><td class="yes">Built</td></tr>
+    <tr><td>Conflict detection across files</td><td>Very high</td><td>Very high</td><td>Med</td><td class="yes">Built (signature)</td></tr>
+    <tr><td>Living documents that flag themselves stale</td><td>High</td><td>High</td><td>Med</td><td class="yes">Built</td></tr>
+    <tr><td>Cross-document synthesis, auto source picking</td><td>High</td><td>High</td><td>High</td><td class="yes">Built</td></tr>
+    <tr><td>Plain-English workflow builder + backfill</td><td>High</td><td>High</td><td>Med</td><td class="yes">Built</td></tr>
+    <tr><td>Drive briefing ("catch me up")</td><td>Med</td><td>Med</td><td>High</td><td class="yes">Built</td></tr>
+    <tr><td>Time-travel view of the drive</td><td>Med</td><td>High</td><td>Low</td><td class="later">Future</td></tr>
+    <tr><td>Approval flows / deadline reminders</td><td>Med</td><td>Low</td><td>Med</td><td class="later">Future</td></tr>
+  </table>
+
+  <h3>Agentic architecture: the intelligent middleware</h3>
+  <div class="lane"><div class="lane-label">When a file is uploaded</div>
+    <div class="flow">
+      <span class="node" style="background:#64748b">File</span><span class="arrow">→</span>
+      <span class="node" style="background:#0ea5e9">Librarian<small>read · summarize · extract facts</small></span><span class="arrow">→</span>
+      <span class="node" style="background:#10b981">Organizer<small>smart folder</small></span><span class="arrow">→</span>
+      <span class="node" style="background:#f59e0b">Automator<small>run workflows</small></span><span class="arrow">→</span>
+      <span class="node" style="background:#ef4444">Sentinel<small>conflicts · stale docs</small></span>
+    </div></div>
+  <div class="lane"><div class="lane-label">When the user types a command</div>
+    <div class="flow">
+      <span class="node" style="background:#64748b">Prompt</span><span class="arrow">→</span>
+      <span class="node" style="background:#6366f1">Router<small>detects intent</small></span><span class="arrow">→</span>
+      <span class="node" style="background:#8b5cf6">Retriever → Analyst<small>cited answer</small></span>
+      <span class="node" style="background:#ec4899">Writer<small>new document</small></span>
+      <span class="node" style="background:#f59e0b">Automator<small>new workflow</small></span>
+      <span class="node" style="background:#475569">Briefer<small>status report</small></span>
+    </div></div>
+  <p>Each agent has one job, a strict JSON schema and a visible trace. Each also has an offline fallback, so the app never breaks.</p>
+</section>
+
+<!-- ============ USER FLOWS ============ -->
+<section class="page">
+  <h2>3. Agentic User Flows (designed before coding)</h2>
+  <h3>Flow A: "The drive caught a mistake"</h3>
+  <ol><li>Dana uploads the signed lease.</li><li>Librarian: contract · Harborview Properties · Monthly Base Rent $15,200.</li>
+  <li>Organizer files it into <i>Office Relocation</i>.</li><li>Sentinel: <b>⚠ plan budgets $14,500/month, lease says $15,200</b> (lease is newer).</li></ol>
+  <h3>Flow B: "Paperwork that does itself"</h3>
+  <ol><li>An EventSpace Co invoice lands.</li><li><i>Invoice → Expense Ledger</i> fires: date, vendor, invoice #, category (Events), total $12,300.</li>
+  <li>A row is appended to <b>Expense Ledger.csv</b>, which is itself searchable ("how much have we spent?").</li></ol>
+  <h3>Flow C: "Write me the doc"</h3>
+  <ol><li>"Draft a launch requirements doc from the Aurora meetings" (nothing selected).</li><li>Router picks the 3 meeting transcripts itself; Writer reconciles them (latest figures win, discrepancies listed, action items tabled).</li>
+  <li>Saved as a living document. When customer interview notes arrive later, it is flagged <b>↻ stale</b>, and Refresh produces v2.</li></ol>
+  <h3>Flow D: "Teach the drive a new habit"</h3>
+  <ol><li>"When a contract is uploaded, extract the landlord, monthly rent, start date and renewal terms into Contracts.csv"</li><li>The Automator turns the sentence into a workflow and backfills existing contracts immediately.</li></ol>
+  <h3>Flow E: "Catch me up"</h3>
+  <p>"Brief me on my drive" returns a per-project status, conflicts that need attention, and live ledgers.</p>
+
+  <h2 style="margin-top:20px">4. Technical Execution</h2>
+  <table class="tbl">
+    <tr><th>Layer</th><th>Choice</th></tr>
+    <tr><td>LLM</td><td>Claude Opus 5.5 via the official Anthropic SDK: structured JSON outputs per agent, streaming for long documents, server-side refusal fallback</td></tr>
+    <tr><td>Retrieval</td><td>Passage chunking + BM25 index, plus LLM query expansion (hybrid semantic search) with citations</td></tr>
+    <tr><td>Backend</td><td>Node.js (zero-framework HTTP server), serialized ingest pipeline, JSON-file storage</td></tr>
+    <tr><td>Frontend</td><td>Vanilla HTML/CSS/JS: Drive-style UI, single command bar, drag &amp; drop, live agent traces, dark mode</td></tr>
+    <tr><td>Resilience</td><td>Every agent has a deterministic offline fallback (TF-IDF clustering, extractive answers, regex extraction)</td></tr>
+  </table>
+  <h3>Run it</h3>
+  <pre>git clone https://github.com/ranet5-design/cortex-agentic-drive.git
+cd cortex-agentic-drive && npm install && npm start     # http://localhost:3000
+# optional: set ANTHROPIC_API_KEY to power the agents with Claude</pre>
+</section>
+</body>
+</html>

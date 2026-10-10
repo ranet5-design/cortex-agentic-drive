@@ -1,0 +1,19 @@
+{
+  "name": "cortex-agentic-drive",
+  "version": "1.0.0",
+  "description": "Cortex: an agentic cloud drive that organizes, cross-references and acts on your files.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "reset": "node server.js --reset",
+    "check-ai": "node scripts/check-ai.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.132.1",
+    "pdf-parse": "1.1.1"
+  }
+}

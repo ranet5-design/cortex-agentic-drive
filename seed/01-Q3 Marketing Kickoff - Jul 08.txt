@@ -1,0 +1,22 @@
+Aurora Launch — Q3 Marketing Kickoff (transcript)
+Date: July 8, 2026
+Attendees: Priya Raman (Marketing Lead), Marcus Chen (Growth), Dana Okafor (Finance), Leo Varga (Product)
+
+Priya: Thanks everyone. The goal for Q3 is simple: a successful public launch of Aurora, our smart energy app, with 50,000 sign-ups in the first 60 days.
+Leo: Product is on track for a September 24 launch. The beta has around 400 active households right now.
+Dana: Finance approved a total Q3 marketing budget of $120,000. Here is the split we agreed last week:
+- Paid social: $45,000
+- Events: $30,000
+- Content and SEO: $25,000
+- Influencers: $20,000
+Marcus: I'd push for more paid social. Our beta acquisition data says Instagram and TikTok convert best for homeowners under 40.
+Dana: Let's revisit after the first month of data. For now the split stands.
+Priya: Agreed. Positioning will be "Your home, on autopilot — save up to 20% on energy bills."
+Leo: One risk: the smart-meter integration with Voltline is still flaky. If it slips, we may need to move the launch.
+Priya: Noted. We'll decide at the August sync.
+
+ACTION ITEMS
+- Priya: finalize the creative brief and positioning by Jul 15
+- Marcus: set up paid social campaigns and tracking by Jul 22
+- Dana: create the Q3 budget tracker spreadsheet by Jul 10
+- Leo: confirm the Voltline integration timeline by Jul 29

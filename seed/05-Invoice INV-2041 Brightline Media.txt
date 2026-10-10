@@ -1,0 +1,17 @@
+INVOICE
+
+From: Brightline Media LLC
+Bill To: Northwind Labs, 12 Elm Street, Portland OR
+Invoice No: INV-2041
+Date: August 31, 2026
+Payment terms: Net 30
+
+Description                                        Amount
+Aurora launch — paid social campaign management     $3,200.00
+Instagram & TikTok ad spend (August)                $5,250.00
+
+Subtotal                                            $8,450.00
+Tax                                                 $0.00
+Total Due                                           $8,450.00
+
+Thank you for your business.
